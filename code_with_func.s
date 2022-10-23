@@ -105,7 +105,7 @@ main:
 	jl	.L6			# }
 	mov	edi, DWORD PTR -8[rbp]
 	lea	rsi, ARRAY2[rip]
-	call	write_array		# вызов функции
+	call	write_array		# вызов функции write_array(DWORD PTR -8[rbp], ARRAY2[rip])
 	mov	eax, 0
 	leave
 	ret
